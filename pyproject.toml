@@ -5,11 +5,14 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = ">=3.5"
+python = ">=3.6"
 panflute = "^1.11"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.9"
+flake8 = "*"
+black = { version = "*", allows-prereleases = true }
+flake8-black = "^0.1"
 
 [tool.poetry.scripts]
 pandocsql = 'pandocsql:main'
