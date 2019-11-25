@@ -38,7 +38,7 @@ def action(elem, doc):
         rows = list(table)
 
         def c(t):
-            return pf.TableCell(pf.Para(pf.Str(t)))
+            return pf.TableCell(pf.Para(pf.Str(str(t))))
 
         def r(cs):
             return pf.TableRow(*list(map(c, cs)))
