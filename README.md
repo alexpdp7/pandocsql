@@ -2,7 +2,13 @@
 
 This is a Pandoc filter to do stuff with SQL.
 
-Tables defined in the document will not appear in the output; however they will be dumped into an SQLite database...
+If you use it like:
+
+```
+$ pandoc README.md -F pandocsql -o README.html
+```
+
+, tables defined in the document will not appear in the output; however they will be dumped into an SQLite database...
 
 | code | description | priority |
 | ---- | ----------- | -------- |
