@@ -20,6 +20,12 @@ from table_1
 order by priority desc
 ```
 
+## Installation
+
+```
+$ pipx install --spec git+https://github.com/alexpdp7/pandocsql.git pandocsql
+```
+
 ## Development
 
 ```
