@@ -9,7 +9,7 @@ python = ">=3.6"
 panflute = "^1.11"
 
 [tool.poetry.dev-dependencies]
-ipython = "^7.9"
+ipython = "^7.11"
 flake8 = "*"
 black = { version = "*", allows-prereleases = true }
 flake8-black = "^0.1"
