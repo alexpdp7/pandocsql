@@ -50,8 +50,15 @@ def finalize(doc):
     pass
 
 
-def main(doc=None):
-    return pf.run_filter(action, prepare=prepare, finalize=finalize, doc=doc)
+def main(doc=None, input_stream=None, output_stream=None):
+    return pf.run_filter(
+        action,
+        prepare=prepare,
+        finalize=finalize,
+        doc=doc,
+        input_stream=input_stream,
+        output_stream=output_stream,
+    )
 
 
 if __name__ == "__main__":

@@ -13,6 +13,7 @@ ipython = "*"
 flake8 = "*"
 black = { version = "*", allow-prereleases = true }
 flake8-black = "*"
+pytest = "*"
 
 [tool.poetry.scripts]
 pandocsql = 'pandocsql:main'
