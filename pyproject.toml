@@ -10,6 +10,7 @@ panflute = "^1.11"
 
 [tool.poetry.dev-dependencies]
 ipython = "*"
+ipdb = "*"
 flake8 = "*"
 black = { version = "*", allow-prereleases = true }
 flake8-black = "*"
