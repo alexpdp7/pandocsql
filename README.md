@@ -26,6 +26,8 @@ from table_1
 order by priority desc
 ```
 
+You can see further examples in the [examples folder](examples/).
+
 ## Installation
 
 ```
