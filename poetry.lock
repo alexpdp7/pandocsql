@@ -244,7 +244,7 @@ description = "Pythonic Pandoc filters"
 name = "panflute"
 optional = false
 python-versions = "*"
-version = "1.12.4"
+version = "1.12.5"
 
 [package.dependencies]
 click = "*"
@@ -323,7 +323,7 @@ wcwidth = "*"
 [[package]]
 category = "dev"
 description = "Run a subprocess in a pseudo terminal"
-marker = "python_version >= \"3.4\" and sys_platform != \"win32\" or sys_platform != \"win32\""
+marker = "python_version >= \"3.4\" and sys_platform != \"win32\" or sys_platform != \"win32\" or python_version >= \"3.4\" and sys_platform != \"win32\" and (python_version >= \"3.4\" and sys_platform != \"win32\" or sys_platform != \"win32\")"
 name = "ptyprocess"
 optional = false
 python-versions = "*"
@@ -475,7 +475,7 @@ more-itertools = "*"
 docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 
 [metadata]
-content-hash = "21c1b3a63c70fbe5ed3687234a005a05e34bb1b0752ab77fc7e5e85b7c701f3a"
+content-hash = "76ae6f5feb6d4137f73e139fb8e6d5cd82ac8846165b373d2af0a834f64c9c18"
 python-versions = ">=3.6"
 
 [metadata.files]
@@ -558,7 +558,7 @@ packaging = [
     {file = "packaging-20.1.tar.gz", hash = "sha256:e665345f9eef0c621aa0bf2f8d78cf6d21904eef16a93f020240b704a57f1334"},
 ]
 panflute = [
-    {file = "panflute-1.12.4.tar.gz", hash = "sha256:5c05dc65328b5881501fa5c1db4f202a0508c1b2f161c6b843516d0c47a49b95"},
+    {file = "panflute-1.12.5.tar.gz", hash = "sha256:8b89507c02fde97650441d50169958b50cb13000edcc7f061390ea6fc313775c"},
 ]
 parso = [
     {file = "parso-0.5.2-py2.py3-none-any.whl", hash = "sha256:5c1f7791de6bd5dbbeac8db0ef5594b36799de198b3f7f7014643b0c5536b9d3"},
