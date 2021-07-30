@@ -31,7 +31,7 @@ You can see further examples in the [examples folder](examples/).
 ## Installation
 
 ```
-$ pipx install --spec git+https://github.com/alexpdp7/pandocsql.git pandocsql
+$ pipx install git+https://github.com/alexpdp7/pandocsql.git
 ```
 
 ## Development
