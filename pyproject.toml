@@ -6,7 +6,7 @@ authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.6"
-panflute = "^1.12"
+panflute = "^2.1"
 
 [tool.poetry.dev-dependencies]
 ipython = "*"
