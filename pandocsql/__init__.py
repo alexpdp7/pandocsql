@@ -18,12 +18,12 @@ def prepare(doc):
 
 def action(elem, doc):
     if isinstance(elem, pf.Table):
-        table = elem.caption.list[0].text
-        headers = list(map(pf.stringify, elem.header.content))
+        table = elem.caption.content[0].content[0].text
+        headers = list(map(pf.stringify, elem.head.content[0].content))
         headers_sql = ",".join(headers)
         placeholders_sql = ",".join(["?"] * len(headers))
         doc.sql.execute(f"create table {table} ({headers_sql})")
-        for row in elem.content:
+        for row in elem.content[0].content:
             row_values = [pf.stringify(cell) for cell in row.content]
             doc.sql.execute(
                 f"insert into {table}({headers_sql}) values ({placeholders_sql})",
@@ -43,7 +43,13 @@ def action(elem, doc):
         def r(cs):
             return pf.TableRow(*list(map(c, cs)))
 
-        return [pf.Table(*list(map(r, rows)), header=r(headers))]
+        return [
+            pf.Table(
+                pf.TableBody(*list(map(r, rows))),
+                head=pf.TableHead(r(headers)),
+                caption=pf.Caption(),
+            )
+        ]
 
 
 def finalize(doc):
