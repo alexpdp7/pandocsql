@@ -283,13 +283,13 @@ files = [
 
 [[package]]
 name = "panflute"
-version = "2.3.0"
+version = "2.3.1"
 description = "Pythonic Pandoc filters"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 files = [
-    {file = "panflute-2.3.0-py3-none-any.whl", hash = "sha256:02673bcbdb521a805f08a2ca0ce864de86ad409ad406a01b3700fcf2aca81635"},
-    {file = "panflute-2.3.0.tar.gz", hash = "sha256:cefd9dfc48ccd9732a53db57610701d22806da397a8a97e5cc8dc070b55865ca"},
+    {file = "panflute-2.3.1-py3-none-any.whl", hash = "sha256:e44afd875b7b17ffebbbe58282849df06d9f1b20a45a2f933cd51bdcf4e89130"},
+    {file = "panflute-2.3.1.tar.gz", hash = "sha256:5f1bd02a34ef3982ee025ec5b58fb3a6eedfc31d994b8ae39d8dc9915a2d8f1f"},
 ]
 
 [package.dependencies]
@@ -572,4 +572,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "435abea8a4e1f86df1f1e34357ee59af3e9d999789c5f2230c1ea599265a8924"
+content-hash = "8f9c4d0fb8830458ca58c1a72e61aff59590c3120c07206b405952979a227e5f"
