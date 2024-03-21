@@ -1,3 +1,6 @@
+I'm not really using this nowadays, so I'm not maintaining it, really.
+https://github.com/alexpdp7/pandoc_datalog is what I will focus on when I have some bandwith.
+
 # pandocsql
 
 This is a Pandoc filter to do stuff with SQL.
